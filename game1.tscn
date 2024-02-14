@@ -1,0 +1,17 @@
+[gd_scene load_steps=5 format=3 uid="uid://crsw0t0t63d11"]
+
+[ext_resource type="Script" path="res://level0.cs" id="1_6m4qy"]
+[ext_resource type="Script" path="res://Camera2D.cs" id="1_fuduk"]
+[ext_resource type="Texture2D" uid="uid://k1qlss1b3p8y" path="res://icon.svg" id="2_0xpkf"]
+[ext_resource type="Script" path="res://PLayer.cs" id="3_bh8lk"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_6m4qy")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(575, 323)
+script = ExtResource("1_fuduk")
+
+[node name="Player" type="Sprite2D" parent="."]
+texture = ExtResource("2_0xpkf")
+script = ExtResource("3_bh8lk")
